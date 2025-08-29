@@ -8,3 +8,6 @@ Maybe it won't be the most efficient sim, but I'll try my best!!
 ### What's included?
 Features like:
  - Currently idk lol, will update l8r
+
+#### What did I learn with this?
+Nothing currently, but something substantial hopefully
