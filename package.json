@@ -19,6 +19,11 @@
   },
   "homepage": "https://github.com/Magaztu/Black-Hola#readme",
   "devDependencies": {
-    "typescript": "^5.9.2"
+    "@types/p5": "^1.7.6",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.3"
+  },
+  "dependencies": {
+    "p5": "^2.0.4"
   }
 }
