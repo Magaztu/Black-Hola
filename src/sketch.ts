@@ -12,7 +12,7 @@ function sketch(p:p5){
     const blackhole = {x: 400, y: 500, mass: 5000};
 
     p.setup = () => {
-        p.createCanvas(800, 800);
+        p.createCanvas(800, 800, "missing canvas??");
         for(let i = 0; i < 300; i++){
             particulas.push({
                 x: p.random(p.width);
