@@ -30,5 +30,20 @@ function sketch(p){
         p.circle(blackhole.X, blackhole.y, 160);
         p.fill(0);
         p.circle(blackhole.X, blackhole.y, 60)
+
+        for (const particula of particulas){
+            const dx = blackhole.x - particula.x;
+            const dy = blackhole.y - particula.y;
+            const distSq = dx * dx + dy * dy;
+            const dist = Math.sqrt(distSq);
+
+            const velocidad = Math.sqrt(particula.vx ** 2 + particula.vy ** 2);
+            const tono = p.map(velocidad, 0, 10, 200, 360);
+            p.fill(tono, 200, 200);
+            p.fill(355);
+            p.circle(particula.x, particula.y,2);
+        }
     }
 };
+
+new p5(sketch);
