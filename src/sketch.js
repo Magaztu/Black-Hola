@@ -22,4 +22,13 @@ function sketch(p){
             })
         }
     }
+    p.draw = () => {
+        p.background(0);
+    
+        p.noStroke();
+        p.fill(20);
+        p.circle(blackhole.X, blackhole.y, 160);
+        p.fill(0);
+        p.circle(blackhole.X, blackhole.y, 60)
+    }
 };
