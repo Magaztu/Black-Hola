@@ -37,6 +37,17 @@ function sketch(p){
             const distSq = dx * dx + dy * dy;
             const dist = Math.sqrt(distSq);
 
+            // Something something limits
+            const force = blackhole.mass / (distSq + 100);
+            const ax = (force * dx) / dist;
+            const ay = (force * dy) / dist;
+
+            particula.vx += ax;
+            particula.vy += ay;
+
+            particula.x += particula.vx;
+            particula.y += particula.vy;
+
             const velocidad = Math.sqrt(particula.vx ** 2 + particula.vy ** 2);
             const tono = p.map(velocidad, 0, 10, 200, 360);
             p.fill(tono, 200, 200);
