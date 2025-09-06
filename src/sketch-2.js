@@ -5,7 +5,7 @@ function sketch(p){
     const blackhole = {x: 400, y: 500, mass: 5000};
 
     p.setup = () => {
-        // p.createCanvas(800, 800);
+        p.createCanvas(800, 800);
         // for(let i = 0; i < 300; i++){
         //     particulas.push({
         //         x: p.random(p.width),
@@ -16,13 +16,13 @@ function sketch(p){
         // }
     }
     p.draw = () => {
-        // p.background(0);
+        p.background(0);
     
-        // p.noStroke();
-        // p.fill(20);
-        // p.circle(blackhole.X, blackhole.y, 160);
-        // p.fill(0);
-        // p.circle(blackhole.X, blackhole.y, 60)
+        p.noStroke();
+        p.fill(20);
+        p.circle(blackhole.x, blackhole.y, 160);
+        p.fill(0);
+        p.circle(blackhole.x, blackhole.y, 60)
 
         // for (const particula of particulas){
         //     const dx = blackhole.x - particula.x;

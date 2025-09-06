@@ -27,9 +27,9 @@ function sketch(p){
     
         p.noStroke();
         p.fill(20);
-        p.circle(blackhole.X, blackhole.y, 160);
+        p.circle(blackhole.x, blackhole.y, 160);
         p.fill(0);
-        p.circle(blackhole.X, blackhole.y, 60)
+        p.circle(blackhole.x, blackhole.y, 60)
 
         for (const particula of particulas){
             const dx = blackhole.x - particula.x;
